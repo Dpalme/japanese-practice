@@ -54,6 +54,23 @@
             border-radius: 100px;
         }
     </style>
+</head>
+
+<body class="night">
+    <div class="container mt-lg text-c">
+        <div class="container" id="content">
+            <span style="letter-spacing: 3rem; margin-right: -3rem"
+                class="mono title-3" id="hiragana">じんめい</span>
+            <div class="title-4 mono mb-1" id="romaji">ji&nbsp;&nbsp;n&nbsp;&nbsp;me&nbsp;&nbsp;i</div>
+            <div class="body-text mb-sm" id="definition">(human) life</div>
+            <p class="small-body mb-1" id="type">(Noun)</p>
+            <div class="container mb-1"><span class="col-h h3" id="kanji">人命</span><span class="col-h h3" id="katakana">ジンメイ</span></div><button
+                onclick="javascript:soundWord()" class="col-4 yellow-btn-bg">speak</button><button
+                onclick="javascript:document.body.classList.toggle('night')"
+                class="col-4 yellow-btn-bg">night</button><button onclick="javascript:newWord()"
+                class="col-4 blue-btn-bg">new</button>
+        </div>
+    </div>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-4SFJ138DWT"></script>
     <script>
@@ -63,12 +80,6 @@
 
         gtag('config', 'G-4SFJ138DWT');
     </script>
-</head>
-
-<body class="night">
-    <div class="container mt-lg text-c">
-        <div class="container" id="content"></div>
-    </div>
 </body>
 
 </html>
