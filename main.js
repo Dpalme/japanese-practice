@@ -1,7 +1,10 @@
-let msg = new SpeechSynthesisUtterance();
-msg.pitch = 2
-msg.rate = 0.2
-msg.lang = "ja";
+let msg;
+if (SpeechSynthesisUtterance) {
+    msg = new SpeechSynthesisUtterance();
+    msg.pitch = 2
+    msg.rate = 0.2
+    msg.lang = "ja";
+}
 
 function newWord() {
     var keyword = wordList[Math.floor(Math.random() * wordList.length)];
@@ -87,7 +90,9 @@ function newWord() {
 
 
 function soundWord() {
-    window.speechSynthesis.speak(msg);
+    if (window.speechSynthesis) {
+        window.speechSynthesis.speak(msg);
+    }
 }
 
 newWord();
