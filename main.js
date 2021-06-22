@@ -32,6 +32,8 @@ function newWord() {
 function soundWord() {
     if (window.speechSynthesis) {
         window.speechSynthesis.speak(msg);
+    } else {
+        confirm('functionality not supported');
     }
 }
 
