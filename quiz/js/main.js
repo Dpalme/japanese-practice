@@ -36,7 +36,7 @@ function checkAnswer(n) {
         score++;
         $('#score').text('score: ' + score);
     }
-    confirm($('#hiragana').text() + ' : ' + options[answer].innerText);
+    $('#output').text($('#hiragana').text() + ' : ' + options[answer].innerText);
     newWord();
 }
 
