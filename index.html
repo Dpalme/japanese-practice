@@ -56,21 +56,24 @@
     </style>
 </head>
 
-<body class="night">
-    <div class=" mt-lg text-c" id="content">
-        <div class="card container mb-lg">
+<body>
+    <div class="mt-lg">
+        <div class="card mb-lg text-c col-8">
             <span style="letter-spacing: 3rem; margin-right: -3rem" class="mono title-3" id="hiragana">じんめい</span>
             <div class="title-4 mono mb-1" id="romaji">ji&nbsp;&nbsp;n&nbsp;&nbsp;me&nbsp;&nbsp;i</div>
             <div class="body-text mb-sm" id="definition">(human) life</div>
             <p class="small-body mb-1" id="type">(Noun)</p>
-            <div class="container mb-1">
+            <div class="container">
                 <span class="col-h h3" id="kanji">人命</span>
                 <span class="col-h h3" id="katakana">ジンメイ</span>
             </div>
         </div>
-        <button onclick="javascript:soundWord()" class="col-4 yellow-btn-bg">speak</button>
-        <button onclick="javascript:document.body.classList.toggle('night')" class="col-4 yellow-btn-bg">night</button>
-        <button onclick="javascript:newWord()" class="col-4 blue-btn-bg">new</button>
+        <div class="col-4">
+            <button onclick="javascript:soundWord()" class="col-12 yellow-btn-bg">speak</button>
+            <button onclick="javascript:nightMode()" class="col-12 yellow-btn-bg">night</button>
+            <button onclick="javascript:newWord()" class="col-12 blue-btn-bg">new word</button>
+            <button onclick="javascript:newWord()" class="col-12 blue-btn-bg">kata quiz</button>
+        </div>
     </div>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-4SFJ138DWT"></script>

@@ -40,4 +40,7 @@ function checkAnswer(n) {
     newWord();
 }
 
-$(document).ready(newWord());
+$(document).ready(function() {
+    newWord();
+    
+});
