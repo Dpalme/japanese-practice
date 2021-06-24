@@ -36,20 +36,3 @@ function soundWord() {
         confirm('functionality not supported');
     }
 }
-
-function nightMode() {
-    if (window.localStorage.getItem('nightMode') != undefined){
-        window.localStorage.setItem('nightMode', !window.localStorage.getItem('nightMode'));
-        document.body.classList.toggle('night');
-    } else {
-        window.localStorage.setItem('nightMode', true);
-        document.body.classList.add('night');
-    }
-}
-
-$(document).ready(function() {
-    newWord();
-    if (window.localStorage.getItem('nightMode')){
-        document.body.classList.toggle('night');
-    }
-});
